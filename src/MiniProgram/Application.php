@@ -43,6 +43,7 @@ use EasyWeChat\Kernel\ServiceContainer;
  * @property \EasyWeChat\MiniProgram\Search\Client              $search
  * @property \EasyWeChat\MiniProgram\Live\Client                $live
  * @property \EasyWeChat\MiniProgram\Broadcast\Client           $broadcast
+ * @property \EasyWeChat\MiniProgram\PhoneNumber\Client         $phone_number
  */
 class Application extends ServiceContainer
 {
@@ -60,6 +61,7 @@ class Application extends ServiceContainer
         ActivityMessage\ServiceProvider::class,
         OpenData\ServiceProvider::class,
         Plugin\ServiceProvider::class,
+        PhoneNumber\ServiceProvider::class,
         Base\ServiceProvider::class,
         Express\ServiceProvider::class,
         NearbyPoi\ServiceProvider::class,
